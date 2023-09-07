@@ -6,11 +6,12 @@ const Search = () => {
     const location=useLocation();
 
     const items=location.state?.item;
+    console.log(location);
     console.log(location.state?.item);
   return (
-    <div>
+    <div className='px-5'>
       <h2 className=' my-5 text-blue-500 px-3'>Search Result:</h2>
-      <div className="flex justify-center ">
+      <div className="flex justify-center flex-wrap gap-5">
 
       {items.map(item=>{
         return(
